@@ -3,15 +3,16 @@ import doorModel from "../../model/door";
 import { Gift } from "./Gift";
 
 interface DoorProps {
-  door: doorModel,
+  value: doorModel,
   doorChange: (newDoor: doorModel) => void;
 }
 
 export function Door({
-  door,
+  value,
   doorChange,
 }: DoorProps) {
 
+  let door = value;
   let doorSelected = door.selected && door.close ? styles.selected : '';
   let selectionToggle = () => doorChange(door.selectionToggle());
   const open = (e: { stopPropagation: () => void; }) => {
@@ -33,7 +34,7 @@ export function Door({
   }
   
   return (
-    <div className={styles.area} onClick={selectionToggle}>
+    <div id={styles.area} onClick={selectionToggle}>
       <div className={`${styles.frame} ${doorSelected}`}>
         {door.close ? renderDoor() : door.haveGift ? <Gift /> : false}
       </div>

@@ -1,0 +1,13 @@
+#card {
+  display: flex;
+
+  width: 180px;
+  height: 180px;
+
+  margin: 3px;
+  padding: 20px;
+
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bolder;
+}

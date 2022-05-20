@@ -1,0 +1,30 @@
+#game {
+  display: flex;
+  flex-direction: column;
+
+  margin: 40px 0;
+}
+
+.doors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: stretch;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 40px;
+}
+
+.buttons button {
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+
+  background-color: #c0392c;
+  color: #fff;
+}

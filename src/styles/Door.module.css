@@ -1,11 +1,11 @@
-.area {
+#area {
   position: relative;
   
   display: flex;
   flex-direction: column;
   align-items: center;
   
-  margin: 5px;
+  margin: 15px;
   
   width: var(--area-door-width);
   height: var(--area-door-height);
